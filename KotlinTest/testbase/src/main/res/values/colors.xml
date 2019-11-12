@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transpant">#00000000</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#00f</color>
+    <color name="ching">#FF0DDFCE</color>
+    <color name="ching_adopt">#31bf6c</color>
+    <color name="light_ching">#daf4e5</color>
+    <color name="blue_light">#afafe1</color>
+    <color name="light_blue">#400f</color>
+    <color name="gray">#66000000</color>
+    <color name="b_2">#66000000</color>
+    <color name="gray_e3">#e3e3e3</color>
+    <color name="gray_a3">#a3a3a3</color>
+    <color name="green_gray">#333333</color>
+    <color name="msg_frame">#DAF4E5</color>
+    <color name="_6">#666666</color>
+    <color name="f4">#f4f4f4</color>
+    <color name="sharef4">#ff7b05</color>
+</resources>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    //MaterialDesign控件
+//    compile 'com.github.rey5137:material:1.2.4'
+    api 'com.android.support:design:25.3.1'
+    //RecyclerView
+    api 'com.android.support:recyclerview-v7:25.3.1'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+
+    //网络请求
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    //图片加载
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.github.bumptech.glide:okhttp3-integration:1.5.0@aar'
+    api 'jp.wasabeef:glide-transformations:2.0.2'
+    api 'de.hdodenhof:circleimageview:2.1.0'
+    //EventBus
+    api 'org.simple:androideventbus:1.0.5.1'
+    //permissions4m
+    api 'com.github.jokermonn:permissions4m:2.1.2-lib'
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+    //ButterKnife
+    api 'com.jakewharton:butterknife:8.5.1'
+    //屏幕适配
+    implementation 'com.zhy:autolayout:1.4.5'
+    //二维码扫描
+    api 'com.google.zxing:core:3.2.1'
+    //Gson
+    api 'com.google.code.gson:gson:2.8.0'
+    //打开相册获取图片
+    api 'com.jph.takephoto:takephoto_library:4.0.3'
+
+    implementation 'com.android.support:multidex:1.0.1'
+    //沉浸式状态栏
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    // kotlin扩展（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+    //吐司工具类
+    api 'com.hjq:toast:8.0'
+    //implementation只能在module里面用，在APP里面应用不到，所以都换成API了
+    api 'cat.ereza:customactivityoncrash:2.2.0'//奔溃处理依赖
+
+}

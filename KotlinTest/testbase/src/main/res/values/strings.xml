@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FruitBase</string>
+    <string name="netError">网络异常,请检查您的网络</string>
+    <string name="key3">/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB</string>
+    <string name="error_details">Error details:</string>
+    <string name="error_occurred">An error occurred. We\'re deeply sorry.</string>
+    <string name="restart_app">Restart app</string>
+    <string name="unknown_exception">Unknown exception</string>
+    <string name="close_app">Close app</string>
+</resources>

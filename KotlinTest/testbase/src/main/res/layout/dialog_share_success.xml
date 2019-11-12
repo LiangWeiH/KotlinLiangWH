@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_share_success_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dialog_share_success_back" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_share_success_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116px"
+        android:src="@drawable/dialog_share_close" />
+
+    <TextView
+        android:id="@+id/share_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="分享成功！"
+        android:textColor="@color/black"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/share_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/share_content1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42px"
+        android:text="请到“赚粮票”页面领取粮票"
+        android:textColor="@color/black"
+        android:textSize="34px" />
+
+    <ImageView
+        android:id="@+id/receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44px"
+        android:src="@drawable/dialog_btn" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

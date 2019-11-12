@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="back" type="id"/>
+    <item name="titleBar" type="id"/>
+    <item name="rootView" type="id"/>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yimaotong.fruitsgame.view.QMUILoadingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="100px"
+    android:layout_height="100px"
+    android:id="@+id/baseLoadingView"
+    android:layout_marginTop="1000px"
+    android:layout_centerHorizontal="true"
+    app:color="#666"/>

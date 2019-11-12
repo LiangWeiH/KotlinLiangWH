@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">仿乐享</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="string_splash">穿越茫茫人海\n寻找属于我们的那一份宁静</string>
+    <string name="title_home">摄影壁纸</string>
+    <string name="title_dashboard">视频推荐</string>
+    <string name="title_notifications">知乎日报</string>
+    <string name="title_profile">我的</string>
+    <string name="empty"></string>
+    <string name="page_loading">正在加载...</string>
+    <string name="pulluploadmore">上拉加载更多</string>
+    <string name="releaseloadmore">释放加载更多</string>
+    <string name="loadmoreing">加载中...</string>
+    <string name="ask_saving_picture">保存到手机?</string>
+    <string name="picture_has_save_to">图片已保存至 %s 文件夹</string>
+    <string name="string_img_save_failed">图片保存失败，请重试</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_setting_picture">设为壁纸</string>
+    <string name="action_share">分享</string>
+</resources>
