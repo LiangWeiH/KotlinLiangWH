@@ -5,3 +5,4 @@ KotlinTest/.idea/codeStyles/codeStyleConfig.xml
 KotlinTest/.idea/codeStyles/Project.xml
 KotlinTest/app/src/androidTest/java/com/example/kotlintest/ExampleInstrumentedTest.kt
 KotlinTest/app/proguard-rules.pro
+KotlinTest/.idea/vcs.xml

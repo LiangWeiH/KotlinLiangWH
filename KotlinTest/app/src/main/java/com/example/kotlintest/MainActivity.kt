@@ -134,7 +134,7 @@ class MainActivity : BaseActivity<MainPersenter>() {
             if (System.currentTimeMillis() - exitTime > 2000) {
                 ToastUtils.setView(R.layout.toast_custom_view)
                 ToastUtils.setGravity(Gravity.BOTTOM, 20, 200)
-                ToastUtils.show("再按一次退出乐享!")
+                ToastUtils.show("再按一次退出仿乐享!")
                 exitTime = System.currentTimeMillis()
             } else {
                 finish()

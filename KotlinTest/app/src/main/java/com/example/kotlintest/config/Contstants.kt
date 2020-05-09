@@ -17,5 +17,10 @@ class Contstants {
          * 图虫推荐
          */
         var GETHOMEPHOTOAPI = TUCHONG_API + "feed-app"
+
+        /**
+         * 开眼视频推荐接口
+         */
+        var VIDEO_API = "http://baobab.kaiyanapp.com/api/v2/feed"
     }
 }

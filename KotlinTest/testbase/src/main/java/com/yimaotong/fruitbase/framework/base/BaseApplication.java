@@ -3,6 +3,8 @@ package com.yimaotong.fruitbase.framework.base;
 import android.app.Application;
 import android.content.Context;
 
+import androidx.multidex.MultiDex;
+
 import com.hjq.toast.ToastUtils;
 import com.yimaotong.fruitbase.framework.services.AppInitService;
 
@@ -16,6 +18,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        // 初始化MultiDex
+        MultiDex.install(this);
         context = getApplicationContext();
         AppInitService.startInitService(getContext());
         // 在 Application 中初始化

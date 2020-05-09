@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/white">
 
     <com.example.kotlintest.utils.TitleBar
+        android:id="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorGreen"
@@ -14,11 +16,22 @@
         app:titleColor="@color/white"
         app:title="视频" />
 
-    <TextView
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:layout_below="@id/titlebar"
+        android:id="@+id/swipeRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/title_dashboard"
-        android:textColor="@color/colorAccent" />
+        android:descendantFocusability="blocksDescendants">
+
+        <com.example.kotlintest.utils.FixedRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titleBar"
+            android:fillViewport="true"
+            android:overScrollMode="never" />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    <include layout="@layout/healnetwork" />
 
 </RelativeLayout>
