@@ -47,7 +47,7 @@ dependencies {
     //ButterKnife
     api 'com.jakewharton:butterknife:8.5.1'
     //屏幕适配
-    implementation 'com.zhy:autolayout:1.4.5'
+//    implementation 'com.zhy:autolayout:1.4.5'
     //二维码扫描
     api 'com.google.zxing:core:3.2.1'
     //Gson

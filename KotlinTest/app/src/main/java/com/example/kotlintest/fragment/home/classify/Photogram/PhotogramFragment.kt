@@ -20,7 +20,7 @@ import com.hjq.toast.ToastUtils
 import com.lcodecore.tkrefreshlayout.RefreshListenerAdapter
 import com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
 import com.lcodecore.tkrefreshlayout.header.SinaRefreshView
-import com.yimaotong.fruitbase.util.DeviceUtils
+import com.base.fruitbase.util.DeviceUtils
 import kotlinx.android.synthetic.main.healnetwork.*
 import java.util.*
 

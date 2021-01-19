@@ -1,22 +1,13 @@
 package com.example.bottomnavigation.ui
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.RelativeLayout
-import androidx.core.app.ActivityCompat
-import androidx.core.app.ActivityOptionsCompat
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.example.kotlintest.R
 import com.example.kotlintest.base.LiangBaseFragment
-import com.example.kotlintest.bean.Feed
-import com.example.kotlintest.fragment.home.classify.Photogram.PhotogramAdapter
-import com.example.kotlintest.fragment.home.classify.Photogram.photo_activity.PhotoViewActivity
 import com.example.kotlintest.fragment.video.VideoAdapter
 import com.example.kotlintest.fragment.video.VideoFragmentPresenter
 import com.example.kotlintest.utils.FixedRecyclerView
@@ -26,9 +17,8 @@ import com.hjq.toast.ToastUtils
 import com.lcodecore.tkrefreshlayout.RefreshListenerAdapter
 import com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
 import com.lcodecore.tkrefreshlayout.header.SinaRefreshView
-import com.yimaotong.fruitbase.util.DeviceUtils
+import com.base.fruitbase.util.DeviceUtils
 import kotlinx.android.synthetic.main.healnetwork.*
-import java.util.ArrayList
 
 
 class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
@@ -39,6 +29,7 @@ class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
     var heal_retry_view: RelativeLayout? = null
     var swipeRefresh: TwinklingRefreshLayout? = null
     var postId: String = ""
+    var timeStamp:String=""
     override fun initData(savedInstanceState: Bundle?) {
         super.initData(savedInstanceState)
         initRefresh()
@@ -58,7 +49,7 @@ class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
             swipeRefresh?.visibility = View.GONE
             setGone()
         } else {
-            mPresenter.getVideoData(page, listRefresh, postId)
+            mPresenter.getVideoData(page, listRefresh, postId,"")
         }
     }
     fun showEmptyView(){
@@ -90,7 +81,7 @@ class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
             override fun onRefresh(refreshLayout: TwinklingRefreshLayout?) {
                 super.onRefresh(refreshLayout)
                 page = 1
-                mPresenter.getVideoData(page, listRefresh, postId)
+                mPresenter.getVideoData(page, listRefresh, postId,"")
             }
         })
     }
@@ -124,7 +115,7 @@ class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
      */
     private fun loadMore() {
         page++
-        mPresenter.getVideoData(page, listLoadMore, postId)
+        mPresenter.getVideoData(page, listLoadMore, postId,timeStamp)
     }
 
     /**
@@ -156,7 +147,7 @@ class VideoFragment : LiangBaseFragment<VideoFragmentPresenter>() {
         retry?.setOnClickListener(View.OnClickListener {
             if (DeviceUtils.netIsConnected(activity)) {
                 page = 1
-                mPresenter.getVideoData(page, listRefresh, postId)
+                mPresenter.getVideoData(page, listRefresh, postId,"")
             } else
                 ToastUtils.show("亲,网络似乎逃往外星了哦！")
         })

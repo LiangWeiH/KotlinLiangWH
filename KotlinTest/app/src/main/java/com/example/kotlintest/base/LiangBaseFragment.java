@@ -1,7 +1,7 @@
 package com.example.kotlintest.base;
 
-import com.yimaotong.fruitbase.framework.base.BaseFragment;
-import com.yimaotong.fruitbase.framework.base.BasePresenter;
+import com.base.fruitbase.framework.base.BaseFragment;
+import com.base.fruitbase.framework.base.BasePresenter;
 
 /**
  * @author LiangWH

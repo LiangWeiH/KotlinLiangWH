@@ -1,7 +1,6 @@
 package com.example.kotlintest
 
 import android.os.Bundle
-import android.view.Gravity
 import android.view.KeyEvent
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -11,8 +10,8 @@ import com.example.bottomnavigation.ui.MyFragment
 import com.example.bottomnavigation.ui.VideoFragment
 import com.example.bottomnavigation.ui.ZhiHuNewsFragment
 import com.example.kotlintest.config.Config
-import com.hjq.toast.ToastUtils
-import com.yimaotong.fruitbase.framework.base.BaseActivity
+import com.example.kotlintest.utils.SnackbarUtil
+import com.base.fruitbase.framework.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -132,12 +131,10 @@ class MainActivity : BaseActivity<MainPersenter>() {
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK && event?.action == KeyEvent.ACTION_DOWN) {
             if (System.currentTimeMillis() - exitTime > 2000) {
-                ToastUtils.setView(R.layout.toast_custom_view)
-                ToastUtils.setGravity(Gravity.BOTTOM, 20, 200)
-                ToastUtils.show("再按一次退出仿乐享!")
+                SnackbarUtil.ShortSnackbar(ctlMain, "再按一次退出仿乐享", resources.getColor(R.color.white), resources.getColor(R.color.colorGreen)).show()
                 exitTime = System.currentTimeMillis()
             } else {
-                finish()
+                killAll()
                 System.exit(0)
             }
             return true

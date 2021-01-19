@@ -14,8 +14,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.kotlintest.R;
-import com.yimaotong.fruitbase.framework.base.BaseActivity;
-import com.yimaotong.fruitbase.util.UIUtils;
+import com.base.fruitbase.framework.base.BaseActivity;
+import com.base.fruitbase.util.UIUtils;
 
 /**
  * @author LiangWH

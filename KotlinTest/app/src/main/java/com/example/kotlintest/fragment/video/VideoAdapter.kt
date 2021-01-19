@@ -37,6 +37,33 @@ class VideoAdapter(datas: ArrayList<MultiVideo>) :
                     .centerCrop()
                     .transition(DrawableTransitionOptions.withCrossFade(500))
                     .into(helper!!.getView(R.id.iv) as ImageView)
+                var category = item?.category
+                category = "#$category  /  "
+                val duration = item?.duration
+
+                val last = duration?.rem(60)
+                var stringLast: String=""
+                if (last != null) {
+                    if (last <= 9) {
+                        stringLast = "0$last"
+                    } else {
+                        stringLast = last.toString() + ""
+                    }
+                }
+
+                var durationString: String=""
+                val minit = duration?.div(60)
+                if (minit != null) {
+                    if (minit < 10) {
+                        durationString = "0$minit"
+                    } else {
+                        durationString = "" + minit
+                    }
+                }
+                val stringTime = durationString + "' " + stringLast + '"'.toString()
+
+                helper.setText(R.id.tv_title, item?.title)
+                    .setText(R.id.tv_time, (category + stringTime).toString())
             }
             MultiVideo.TEXT -> {
                 helper?.setText(R.id.tv_home_text,item.text)

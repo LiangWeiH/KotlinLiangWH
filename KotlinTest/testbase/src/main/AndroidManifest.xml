@@ -22,8 +22,8 @@
         android:name="android.support.FILE_PROVIDER_PATHS"
         android:resource="@xml/new_app_file_paths"/>
     </provider>-->
-        <service android:name="com.yimaotong.fruitbase.util.update.UpdateService"/>
-        <service android:name="com.yimaotong.fruitbase.framework.services.AppInitService"/>
+        <service android:name="com.base.fruitbase.util.update.UpdateService"/>
+        <service android:name="com.base.fruitbase.framework.services.AppInitService"/>
     </application>
 
 </manifest>

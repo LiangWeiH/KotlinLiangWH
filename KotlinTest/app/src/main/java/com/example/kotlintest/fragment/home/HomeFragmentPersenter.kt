@@ -1,7 +1,7 @@
 package com.example.kotlintest.fragment.home
 
 import com.example.bottomnavigation.ui.HomeFragment
-import com.yimaotong.fruitbase.framework.base.BasePresenter
+import com.base.fruitbase.framework.base.BasePresenter
 
 
 /**

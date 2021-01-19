@@ -1,6 +1,6 @@
 package com.example.kotlintest.splash
 
-import com.yimaotong.fruitbase.framework.base.BasePresenter
+import com.base.fruitbase.framework.base.BasePresenter
 
 class SplashPersenter(rootView: SplashActivity) :
     BasePresenter<SplashActivity, SplashModel>(rootView) {

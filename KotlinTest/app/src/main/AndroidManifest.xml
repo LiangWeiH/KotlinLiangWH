@@ -23,9 +23,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" /> <!-- 适配华为（huawei）刘海屏 -->
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.yimaotong.fruitbase.ui.error.CustomErrorActivity"
+            android:name="com.base.fruitbase.ui.error.CustomErrorActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".fragment.home.classify.Photogram.photo_activity.PhotoViewActivity"

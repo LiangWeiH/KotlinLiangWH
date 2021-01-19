@@ -5,10 +5,11 @@ import android.util.Log
 import cat.ereza.customactivityoncrash.CustomActivityOnCrash
 import cat.ereza.customactivityoncrash.config.CaocConfig
 import com.alibaba.android.arouter.launcher.ARouter
+import com.base.fruitbase.framework.base.BaseApplication
 import com.example.kotlintest.MainActivity
 import com.example.kotlintest.R
-import com.yimaotong.fruitbase.framework.base.BaseApplication
-import com.yimaotong.fruitbase.ui.error.CustomErrorActivity
+import com.base.fruitbase.ui.error.CustomErrorActivity
+import com.example.kotlintest.base.AppService
 
 /**
  * MyApp App启动的时候需要初始化的东西
@@ -22,6 +23,7 @@ class MyApp : BaseApplication() {
 //        ARouter.openLog()    // 打印日志
 //        ARouter.openDebug()  // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
         ARouter.init(this) // 尽可能早，推荐在Application中初始化    //整个配置属性，可以设置一个或多个，也可以一个都不设置
+        AppService.startInitService(this)
         //检测异常崩溃的
         CaocConfig.Builder.create()
             //程序在后台时，发生崩溃的三种处理方式

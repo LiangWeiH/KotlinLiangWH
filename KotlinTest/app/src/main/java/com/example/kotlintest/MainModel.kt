@@ -1,6 +1,6 @@
 package com.example.kotlintest
 
-import com.yimaotong.fruitbase.framework.base.BaseModel
+import com.base.fruitbase.framework.base.BaseModel
 
 class MainModel : BaseModel(){
 

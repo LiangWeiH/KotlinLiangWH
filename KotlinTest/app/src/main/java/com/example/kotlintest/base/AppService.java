@@ -6,9 +6,9 @@ import android.content.Intent;
 
 import androidx.collection.ArrayMap;
 
-import com.yimaotong.fruitbase.protocal.FruitSignStragtegy;
-import com.yimaotong.fruitbase.protocal.LoginExtra;
-import com.yimaotong.fruitbase.protocal.netutil.NetUtil;
+import com.base.fruitbase.protocal.FruitSignStragtegy;
+import com.base.fruitbase.protocal.LoginExtra;
+import com.base.fruitbase.protocal.netutil.NetUtil;
 
 import java.util.Map;
 

@@ -1,7 +1,6 @@
 package com.example.kotlintest.fragment.home.classify.Photogram.photo_activity
 
-import com.example.kotlintest.fragment.home.HomeFragmentModel
-import com.yimaotong.fruitbase.framework.base.BasePresenter
+import com.base.fruitbase.framework.base.BasePresenter
 
 
 /**

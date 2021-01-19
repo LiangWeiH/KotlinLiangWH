@@ -7,7 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.kotlintest.R
 import com.example.kotlintest.config.Config
-import com.yimaotong.fruitbase.framework.base.BaseActivity
+import com.base.fruitbase.framework.base.BaseActivity
 
 @Route(path =  Config.AppCommon_Splash)
 class SplashActivity : BaseActivity<SplashPersenter>() {
@@ -16,7 +16,7 @@ class SplashActivity : BaseActivity<SplashPersenter>() {
     var countDownTimer: CountDownTimer? = null
     override fun initView() {
         super.initView()
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)  //隐藏状态栏
+        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)  //隐藏状态栏
         startCountDowm()
     }
 
@@ -34,6 +34,7 @@ class SplashActivity : BaseActivity<SplashPersenter>() {
             }
         }.start()
     }
+
 
     /**
      *  xml

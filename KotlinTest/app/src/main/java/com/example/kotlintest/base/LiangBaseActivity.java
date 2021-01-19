@@ -1,7 +1,7 @@
 package com.example.kotlintest.base;
 
-import com.yimaotong.fruitbase.framework.base.BaseActivity;
-import com.yimaotong.fruitbase.framework.base.BasePresenter;
+import com.base.fruitbase.framework.base.BaseActivity;
+import com.base.fruitbase.framework.base.BasePresenter;
 
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;

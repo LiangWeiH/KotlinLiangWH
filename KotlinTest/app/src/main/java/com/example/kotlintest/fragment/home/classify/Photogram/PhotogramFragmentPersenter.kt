@@ -4,10 +4,10 @@ import com.example.bottomnavigation.ui.PhotogramFragment
 import com.example.kotlintest.bean.Feed
 import com.example.kotlintest.bean.HomePhotoBean
 import com.example.kotlintest.utils.ShowLodingUtils
-import com.yimaotong.fruitbase.framework.base.BasePresenter
-import com.yimaotong.fruitbase.protocal.Convert
-import com.yimaotong.fruitbase.protocal.netutil.BaseCallBack
-import com.yimaotong.fruitbase.protocal.netutil.PrintUtil
+import com.base.fruitbase.framework.base.BasePresenter
+import com.base.fruitbase.protocal.Convert
+import com.base.fruitbase.protocal.netutil.BaseCallBack
+import com.base.fruitbase.protocal.netutil.PrintUtil
 
 
 /**
